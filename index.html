@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green guide</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-footer-media.css">
+    <script src="js/main.js"></script>
+    <style>
+        .swiper-pagination{
+            position: unset;
+        }
+        .swiper-pagination-bullet{
+            position: relative;
+            width: unset;
+            height: unset;
+            background: none;
+            font-size: 1.8em;
+            font-weight: 600;
+            padding: 0 35px;
+        }
+        .swiper-pagination-bullet::after{
+            content: "";
+            display: block;
+
+        }
+        .swiper-pagination-bullet:active{
+            background: none;
+        }
+        @media screen and (max-width:767px) {
+            .swiper-pagination-bullet{
+            font-size: 1.5em;
+            padding: 0 10px;
+        }
+        }
+        @media screen and (max-width: 460px) {
+            .swiper-pagination-bullet{
+            font-size: 1.2em;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="innerbox">
+            <p class="hambtn"><a href="#"><img src="image/icon/hambtn.png" alt="hambtn"></a></p>
+            <h1 class="logo"><a href="#"><img src="image/icon/LOGO.png" alt="Green guide logo"></a></h1>
+            <ul id="nav">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">Guider</a></li>
+                <li><a href="#">매장</a></li>
+                <li><a href="#">소식</a></li>
+            </ul>
+            <ul class="gnb">
+                <li><a href="#">검색</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="mainbanner">
+        <ul class="banner">
+            <li class="banner1">
+                <div class="banner1text innerbox">
+                    <h2>New Recipe</h2>
+                    <span>그린 가이드 만의 <span>새로운 레시피와 함께</span></span>
+                    <span>신선한 일상으로 안내합니다.</span>
+                    <a href="#" class="more">자세히보기</a>
+                </div>
+            </li>
+            <li class="banner2">
+                <div class="banner2text innerbox">
+                    <h2>SUMMER EVENT</h2>
+                    <span>샐러드로 채우는 신선한 일상</span>
+                    <p>
+                        <span>그린가이드의 이벤트와 함께</span>
+                        <span>일상속 신선함을 찾아보세요!</span>
+                    </p>
+                    <a href="#" class="more">자세히보기</a>
+                </div>
+            </li>
+            <li class="banner3">
+                <div class="banner3text innerbox">
+                    <h2>NEW THIS SEASON</h2>
+                    <span>MAPLE FARM BOWL</span>
+                    <a href="#" class="more">자세히보기</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="barrow">
+            <li><a href="#" class="leftBtn"></a></li>
+            <li><a href="#" class="rightBtn"></a></li>
+        </ul>
+        <ul class="pager">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div class="innerbox">
+            <section class="menuwrap">
+                <h2 class="blind">menu</h2>
+                <ul class="menu swiper-pagination">
+                    <li><a href="#void">Best</a></li>
+                    <li><a href="#void">Salad</a></li>
+                    <li><a href="#void">Warm Bowls</a></li>
+                    <li><a href="#void">Drink</a></li>
+                </ul>
+                <div class="menulistwrap swiper-container swiper1">
+                    <ul class="menulist swiper-wrapper">
+                        <li class="swiper-slide">
+                            <span class="best">Best</span>
+                            <a href="#void"><img src="image/menu1.png" alt="main-bestmenu1"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="best">Best</span>
+                            <a href="#void"><img src="image/menu2.png" alt="main-bestmenu2"></a>
+                            <div class="menutext">
+                                <strong>비건 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 오븐에 구운 촉촉한 닭가슴살에</span>
+                                    <span>시저 소스를 얹은 샐러드 입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="best">Best</span>
+                            <a href="#void"><img src="image/bowl-3.png" alt="main-bestmenu3"></a>
+                            <div class="menutext">
+                                <strong>치킨&치즈 샐러드</strong>
+                                <p>
+                                    <span>7가지의 다양한 채소와 크림치즈에</span>
+                                    <span>오리엔탈 드레싱을 뿌린 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/menu4.png" alt="main-salad-1"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/menu5.png" alt="main-salad-2"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/menu6.png" alt="main-salad-3"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/bowl-1.png" alt="main-bowl-1"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/bowl-4.png" alt="main-bowl-2"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/bowl-6.png" alt="main-bowl-3"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/green-tea.png" alt="main-drink-1"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/grafeflute-tea.png" alt="main-drink-2"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#void"><img src="image/lemon-tea.png" alt="main-drink-3"></a>
+                            <div class="menutext">
+                                <strong>퀴노아 샐러드</strong>
+                                <p>
+                                    <span>5가지의 채소와 퀴노아,아보카도 및</span>
+                                    <span>체다 치즈가 들어간 샐러드입니다.</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="storewrap">
+                <h2 class="blind">매장,브랜드안내</h2>
+                <div class="storebox">
+                    <div class="textbox">
+                        <h3>매장 안내</h3>
+                        <p>국내 각 지역마다 있는 그린가이드의
+                            <span>지점을 확인해보세요!</span>
+                        </p>
+                    </div>
+                    <a href="#" class="more">자세히보기</a>
+                </div>
+                <div class="brandbox">
+                    <div class="textbox">
+                        <h3>Brand</h3>
+                        <p>그린 가이드의 스토리와 가치관
+                            <span>해결해 나갈 미션을 소개합니다. </span>
+                        </p>
+                    </div>
+                    <a href="#" class="more">자세히보기</a>
+                </div>
+            </section>
+            <section class="eventwrap">
+                <h2>새 소식 &amp; 이벤트</h2>
+                <div class="swiper2 swiper-container">
+                     <ul class="sns swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner1.jpg" alt="sns-banner1"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner2.jpg" alt="sns-banner2"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner3.jpg" alt="sns-banner3"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner4.jpg" alt="sns-banner4"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner5.jpg" alt="sns-banner5"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner6.jpg" alt="sns-banner6"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner7.jpg" alt="sns-banner7"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner8.jpg" alt="sns-banner8"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner9.jpg" alt="sns-banner9"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="image/sns-banner10.jpg" alt="sns-banner10"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="brandpost">
+            <h2 class="blind">브랜드</h2>
+            <div class="textbox">
+                <h3>Guiding Your Life</h3>
+                <p>
+                    <span>그린가이드는 평범한 일상에서</span>
+                    <span>놓치고 있는 건강과 신선함을</span>
+                    <span>되찾아 주는 가이드 역할을 합니다.</span>
+                </p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="innerbox">
+            <div class="footleft">
+                <p><strong>Green guide</strong>&nbsp; 건강을 가이드하다.</p>
+                <div class="open">
+                    <p>매장 영업시간</p>
+                    <div class="opentime">
+                        <span>평일 - 오전 9:00 ~ 오후 10:00</span>
+                        <span>주말 - 오전 10:00 ~ 오후 9:00</span>
+                    </div>
+                    <div>
+                        <span>휴무일 : 공휴일</span>
+                        <span>고객센터 : ****_****</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footright">
+                <div class="footquick">
+                    <ul class="footmenu">
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                        <li><a href="#">법적 고지</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                    <ul class="footsns">
+                        <li><a href="#"><img src="image/icon/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="image/icon/insta.png" alt="insta"></a></li>
+                        <li><a href="#"><img src="image/icon/kakao.png" alt="kakao"></a></li>
+                    </ul>
+                </div>
+                <div class="foottext">
+                    <address>
+                        <p>
+                            <span>서울특별시 중구 을지로50 20층 그린 가이드 대표 이사 : 강지훈</span>
+                            <span>사업자번호 : 000-00000 TEL. 02-558-0396 FAX 22-2222-2222</span>
+                            <span>고객센터 및 문의사항 : 카카오톡 ID E-mail : kigf59@gmail.com</span>
+                        </p>
+                    </address>
+                    <p class="copy">
+                        Copyright © 2022. Green guide All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var bullet = ['Best', 'Salad', 'Warm Bowls', 'Drink'];
+        var swiper = 
+        new Swiper('.swiper1', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (bullet[index]) + '</span>';
+        },
+            },
+            slidesPerView:3,
+            slidesPerGroup:3,
+            loop:true
+        })
+        new Swiper('.swiper2',{
+            spaceBetween: 10,
+            breakpoints:{
+                519:{
+                    slidesPerView:2
+                },
+                767:{
+                    slidesPerView:3
+                },
+                1024:{
+                    slidesPerView:4
+                },
+                3000:{
+                    slidesPerView:5
+                },
+            }
+        })
+    </script>
+</body>
+
+</html>

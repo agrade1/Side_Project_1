@@ -1,0 +1,307 @@
+/* banner */
+.banner {
+    height: calc(100vh - 85px);
+    position: relative;
+    background-image: url(../image/top-banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* 배너 텍스트 */
+.banner>.banner-text {
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.banner>.banner-text>h2 {
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+.banner>.banner-text>span {
+    font-size: 1.3em;
+    display: block;
+}
+/* container */
+#container>.innerbox {
+    max-width: 1100px;
+}
+/* 브랜드 소개  */
+.brand {
+    position: relative;
+    background-color: #eee;
+}
+.brand>img {
+    width: 100%;
+    border: none;
+}
+.brand>.textbox {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+}
+.brand>.textbox>h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.brand>.textbox>p {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.brand>.textbox>p>span {
+    display: block;
+}
+/* 2번쨰 브랜드 카드 텍스트 위치조정 */
+.brand_wrap>.brand:nth-child(4)>.textbox {
+    right: 30px;
+    left: auto;
+}
+/* 상세 텍스트 박스 */
+.brand_wrap>.brand_text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 25px 0;
+}
+.brand_wrap>.brand_text>h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+/* 가이드 스텝 */
+.guide_step {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 570px;
+    background-image: url(../image/line-arrow.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+}
+.guide_step>h3 {
+    font-size: 2em;
+    color: #04573F;
+    line-height: 30px;
+    margin: 50px 0;
+}
+/* 가이드스텝 녹색선 */
+.guide_step>img {
+    width: 85%;
+}
+/* 가이드스텝 box */
+.guide_step>.step_box_wrap {
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 0;
+}
+.guide_step>.step_box_wrap>div {
+    position: relative;
+    width: 28%;
+    height: 330px;
+    margin: 0 20px;
+    padding-top: 30px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+}
+.guide_step>.step_box_wrap>.step2 {
+    margin-top: 50px;
+    background-color: white;
+}
+.guide_step>.step_box_wrap>div>img {
+    width: 60%;
+}
+.guide_step>.step_box_wrap>div>.step_text>strong {
+    font-size: 1.8em;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.guide_step>.step_box_wrap>div>.step_text>.line {
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #777;
+    margin: 0 auto 10px;
+}
+.guide_step>.step_box_wrap>div>.step_text>span {
+    display: block;
+    font-weight: 500;
+}
+/* about us */
+.about {
+    padding: 60px 80px;
+    border-top: 1px solid #04573F;
+}
+.about>h3 {
+    font-size: 3em;
+    color: #777;
+    margin-bottom: 10px;
+}
+.about>p {
+    font-size: 2.2em;
+}
+.about>p>span {
+    font-size: 0.7em;
+    word-break: keep-all;
+}
+.about>.about_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about>.about_box>.about_text>h4 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #04573F;
+}
+.about>.about_box>.about_text>span {
+    display: block;
+    font-size: 1.1em;
+    word-break: keep-all;
+}
+.about>.about_box:nth-child(3)>img {
+    width: 25%;
+}
+.about>.about_box:nth-child(4) {
+    margin-bottom: 15px;
+}
+.about>.about_box:nth-child(4)>img {
+    width: 50%;
+}
+.about>.about_box:last-child>img {
+    border-radius: 20px;
+    width: 35%;
+}
+.about>.about_box:nth-child(4)>.about_text,
+.about>.about_box:last-child>.about_text {
+    order: 2;
+    text-align: right;
+}
+/* 반응형 */
+@media screen and (max-width:1119px) {
+    /* guide_step q박스크기조절 */
+    .guide_step>.step_box_wrap {
+        margin-top: 0;
+    }
+    .guide_step>.step_box_wrap>div {
+        width: 21vw;
+        height: 30vw;
+    }
+}
+@media screen and (max-width:920px) {
+    /* 가이드 스탭 배경이미지 지우기 */
+    .guide_step {
+        background: none;
+    }
+    .guide_step>.step_box_wrap {
+        width: 90%;
+    }
+    .guide_step>.step_box_wrap>div {
+        width: 30%;
+        height: 50%;
+        padding-bottom: 30px;
+        margin: 0 10px;
+    }
+    .guide_step>.step_box_wrap>.step3 {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:767px) {
+    /* 배너 크기조절 */
+    .banner{
+        height: 94vh;
+    }
+    /* 브랜드 카드 이미지 크기조절 */
+    .brand{
+        width: 150%;
+    }
+    .brand_wrap>.brand:nth-child(6)>img{
+        position: relative;
+        left: 0;
+        transform: translateX(-20%);
+    }
+    /* 브랜드 카드 텍스트 위치및 크기조절 */
+    .brand_wrap>.brand_text span{
+        display: block;
+        font-size: 1.1em;
+        line-height: 20px;
+    }
+    .brand_wrap>.brand_text>p:last-child{
+        display: none;
+    }
+    .brand>.textbox{
+        left: 10px;
+    }
+    .brand_wrap>.brand:nth-child(4)>.textbox {
+        left: 10px;
+    }
+    /* about 텍스트,그림 가운대 정렬 */
+    .about{
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .about>.about_box {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+    .about>.about_box>.about_text {
+        width: 100%;
+    }
+    /* about 그림 order 취소 */
+    .about>.about_box:nth-child(3)>.about_text,
+    .about>.about_box:nth-child(4)>.about_text,
+    .about>.about_box:last-child>.about_text {
+        order: 2;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about>.about_box:nth-child(3)>img {
+        min-width: 150px;
+    }
+    .about>.about_box:nth-child(4)>img {
+        min-width: 290px;
+    }
+    .about>.about_box:last-child>img {
+        min-width: 200px;
+    }
+    .brand_wrap{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:600px) {
+    /* 가이드 스텝 박스 위치 조절 */
+    .guide_step {
+        height: 100%;
+    }
+    .guide_step>.step_box_wrap {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .guide_step>.step_box_wrap>div {
+        width: 50%;
+        margin: 0;
+        border-radius: 30px;
+    }
+    .guide_step>.step_box_wrap>.step2 {
+        margin-top: 200px;
+    }
+    .guide_step>.step_box_wrap>.step3 {
+        margin-top: -80px;
+        margin-bottom: 50px;
+    }
+    .brand>.textbox>h3{
+        font-size: 2em;
+    }
+    .brand>.textbox>p{
+        font-size: 1.1em;
+    }
+    .brand_wrap>.brand_text{
+        word-break: keep-all;
+    }
+}

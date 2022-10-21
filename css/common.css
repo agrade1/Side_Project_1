@@ -1,0 +1,32 @@
+* {
+    font-family: 'Noto Sans KR', 'roboto', sans-serif;
+}
+body, div, ul, ol, li, h1, h2, h3, h4, h5, form, p, button, input {
+    margin: 0;
+    padding: 0;
+}
+address {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.blind {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+}

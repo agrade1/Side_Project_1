@@ -1,0 +1,180 @@
+#container {
+    background-color: #fffdfa;
+    ;
+}
+.loginWrap {
+    position: relative;
+    height: 600px;
+    text-align: center;
+}
+.login {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #777;
+    background-color: white;
+}
+.login>.textbox {
+    padding-bottom: 30px;
+}
+.login>.textbox>h2 {
+    font-size: 2em;
+    padding: 30px 0;
+    color: #04573F;
+}
+.login>.textbox>p {
+    font-size: 1.05em;
+}
+/* 아이디,비밀번호 입력란 */
+.login>.id_pw_wrap>div {
+    margin: 0 auto;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #777;
+    vertical-align: middle;
+}
+.login>.id_pw_wrap>div:first-child {
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.login>.id_pw_wrap>div:last-child {
+    border-radius: 0 0 5px 5px;
+}
+.login>.id_pw_wrap>div>i {
+    display: inline-block;
+    position: relative;
+    width: 12%;
+    height: 50px;
+    vertical-align: middle;
+}
+.login>.id_pw_wrap>div>i>img {
+    position: absolute;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login>.id_pw_wrap>div>input {
+    width: 87%;
+    border: none;
+}
+.login>.id_pw_wrap>div>input:focus {
+    outline: none;
+}
+/* 아이디 저장 */
+.login_keep {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 60px;
+}
+.login_keep>div {
+    display: flex;
+}
+.login_keep>.search>a {
+    padding: 0 10px;
+    position: relative;
+}
+.login_keep>.search>a:last-child {
+    padding-right: 0;
+}
+.login_keep>.search>a:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #777;
+}
+/* 로그인버튼 */
+.login_btn {
+    width: 50%;
+    height: 50px;
+    background-color: #0BA457;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login_btn>.btn_text {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+/* 회원가입 */
+.signup {
+    width: 50%;
+    margin: 40px auto 0;
+}
+.signup>.signup_txt {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.signup>.signup_btn {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 15px auto;
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+@media screen and (max-width:1024px) {
+    /* 전체 테두리 크기조정 */
+    .login {
+        width: 90vw;
+    }
+    .login>.textbox>h2 {
+        padding-bottom: 0;
+    }
+    .login>.textbox>p>span {
+        display: block;
+    }
+}
+@media screen and (max-width:600px) {
+    /* 전체크기조절 */
+    .login>.id_pw_wrap>div,
+    .login_keep,
+    .login_btn,
+    .signup {
+        width: 80%;
+    }
+    /* 로그인 아이콘 크기조절 */
+    .login>.id_pw_wrap>div>i>img {
+        height: 60%;
+    }
+}
+@media screen and (max-width:400px) {
+    /* 전체크기조절 */
+    .login>.id_pw_wrap>div,
+    .login_keep,
+    .login_btn,
+    .signup {
+        width: 95%;
+    }
+    .login_btn,
+    .signup>.signup_btn {
+        height: 40px;
+    }
+    .login_btn>.btn_text {
+        font-size: 1.1em;
+    }
+    .signup>.signup_btn {
+        line-height: 40px;
+    }
+}
+@media screen and (max-width:310px) {
+    .login>.id_pw_wrap>div>i {
+        width: 6%;
+    }
+}

@@ -1,0 +1,524 @@
+body {
+    background-color: #FFFDFA;
+    color: #333;
+    font-size: 16px;
+}
+.more {
+    display: block;
+    width: 11em;
+    height: 2em;
+    border-radius: 40px;
+    background-color: #ECFF45;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.more:hover {
+    background-color: #04573F;
+    color: white;
+}
+.best {
+    display: block;
+    width: 4em;
+    height: 1.5em;
+    border-radius: 30px;
+    background-color: #284F1B;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #E5E6C2;
+}
+/* mainbanner */
+#mainbanner {
+    height: calc(100vh - 85px);
+    overflow: hidden;
+    position: relative;
+}
+/* 배너 추가시 넓이 변경 */
+.banner {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.banner>li {
+    position: relative;
+    flex: 1 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner>li.banner1 {
+    background-image: url(../image/banner1.jpg);
+}
+.banner>li.banner2 {
+    background-image: url(../image/banner2.jpg);
+}
+.banner>li.banner3 {
+    background-image: url(../image/banner3.jpg);
+}
+.banner>li>div>a {
+    margin-top: 80px;
+}
+.banner>li>div{
+    position: relative;
+    padding: 0 70px;
+}
+/* 1번배너 */
+.banner1text {
+    bottom: -55%;
+    color: white;
+}
+.banner1text>h2 {
+    color: #ECFF45;
+    font-size: 2.3em;
+}
+.banner1text>span {
+    display: block;
+    font-weight: bold;
+    font-size: 2.7em;
+    line-height: 1.2;
+}
+/* 2번배너 */
+.banner2text {
+    top: 8%;
+}
+.banner2text>h2 {
+    font-size: 4em;
+    color: #1EAECC;
+    text-shadow: #2A597E 2px 2px 3px;
+    word-break: normal;
+}
+.banner2text>span {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #50D9CC;
+}
+.banner2text>p>span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+/* 3번배너 */
+.banner3text{
+    top: 60%;
+    right: 15%;
+    width: 50%;
+    color: #E5E6C2;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 40px !important;
+}
+.banner3>.banner3text>h2{
+    color: #ECFF45;
+}
+.banner3>.banner3text>span{
+    font-size: 3.5em;
+}
+.barrow{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.barrow>li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+}
+.barrow>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.barrow>li>.leftBtn{
+    background-image: url(../image/icon/arrow-left-bold.svg);
+}
+.barrow>li>.rightBtn{
+    background-image: url(../image/icon/arrow-right-bold.svg);
+}
+/* container */
+/* 베스트 메뉴 */
+#container .menuwrap {
+    margin-bottom: 80px;
+    padding: 0 50px;
+}
+#container .menuwrap>.menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#container .menuwrap>.menu>li {
+    font-size: 1.8em;
+    font-weight: 600;
+    position: relative;
+}
+#container .menuwrap>.menu>li::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #333;
+}
+#container .menuwrap>.menu>li:last-child::after {
+    display: none;
+}
+#container .menuwrap>.menu a {
+    padding: 0 35px;
+}
+/* 메뉴리스트 */
+.menuwrap>.menulistwrap {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 0, 0.3); */
+}
+.menuwrap>.menulistwrap>.menulist {
+    width: 400%;
+    display: flex;
+}
+.menuwrap>.menulistwrap>.menulist>li {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.menulist .best {
+    position: absolute;
+    left: 0;
+}
+.menuwrap>.menulistwrap>.menulist>li a {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+}
+.menuwrap>.menulistwrap>.menulist>li a>img {
+    height: 85%;
+    padding-top: 30px;
+    transition: 0.3s;
+}
+.menuwrap>.menulistwrap>.menulist>li a:hover>img {
+    transform: scale(1.1);
+}
+.menutext {
+    margin-top: 0px;
+    text-align: center;
+}
+.menutext>strong {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.menutext span {
+    display: block;
+    color: #777;
+}
+/* 매장,브랜드 */
+.storewrap {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* border-top: 2px solid #707070; */
+    /* border-bottom: 2px solid #707070; */
+}
+.storewrap>div {
+    width: 680px;
+    height: 300px;
+    text-align: center;
+}
+.storewrap>.storebox {
+    background-image: url(../image/sub-banner1.jpg);
+}
+.storewrap>.brandbox {
+    background-image: url(../image/sub-banner2.jpg);
+}
+.storewrap .textbox {
+    margin-top: 110px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.storewrap .textbox>h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.storewrap .more {
+    margin: 0 auto;
+}
+/* sns&이벤트 */
+.eventwrap {
+    margin-bottom: 40px;
+}
+.eventwrap>h2 {
+    font-size: 1.5em;
+    padding: 60px 0 20px 20px;
+}
+.snshidden {
+    height: 279px;
+    overflow: hidden;
+}
+.snsscroll {
+    overflow-x: auto;
+}
+.sns {
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sns>li {
+    width: 100%;
+}
+.sns>li:first-child{
+    margin-left: 10px;
+}
+.sns>li>a {
+    display: block;
+}
+.sns>li img {
+    width: 100%;
+}
+/* 브랜드 포스트 */
+.brandpost {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    background-image: url(../image/main-brand-banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.brandpost>.textbox {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+.brandpost>.textbox>h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.brandpost>.textbox span {
+    display: block;
+    font-size: 1.2em;
+}
+/* 반응형 */
+@media screen and (max-width:1468px) {
+    /* 크기조절 */
+    .brandpost {
+        height: 35vw;
+    }
+}
+@media screen and (max-width:1379px) {
+    /* 위치이동 */
+    .storewrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 50px;
+    }
+    .storewrap>div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .storewrap>.storebox {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:1024px) {
+    /* padding 조절 */
+    #container .menuwrap {
+        padding: 0 15px;
+    }
+    .storewrap {
+        padding: 0;
+    }
+    .banner>li>div {
+        padding: 0 40px;
+    }
+    .banner3>.banner3text>span{
+        font-size: 3em;
+    }
+    /* 메뉴리스트 반응형 크기조절 */
+    .menuwrap>.menulistwrap>.menulist>li a {
+        height: 35vw;
+    }
+    .menuwrap>.menulistwrap>.menulist>li a>img {
+        height: 75%;
+    }
+    /* 브랜드 포스트  */
+    .brandpost{
+        height: 50vw;
+    }
+    .brandpost>.textbox{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:767px) {
+    /* 메인배너 크기조정 */
+    #mainbanner {
+        height: calc(100vh - 63px);
+    }
+    .storewrap>div {
+        position: relative;
+        width: 100%;
+        height: 70vw;
+    }
+    /* 배너 위치조정 */
+    .banner>.banner1 {
+        background-image: url(../image/mobile-banner1.jpg);
+    }
+    /* 배너 텍스트 */
+    .banner1text,
+    .banner2text {
+        margin-left: 0px;
+    }
+    .banner1text>a,
+    .banner2text>a {
+        margin-top: 30px;
+    }
+    .banner1text{
+        bottom: -67%;
+    }
+    .banner1text>h2{
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+    .banner1text>span{
+        font-size: 2em;
+    }
+    .banner1text>span>span{
+        display: block;
+    }
+    .banner3text{
+        right: 0;
+        width: 100%;
+        padding: 15px 40px !important;
+    }
+    .barrow>li{
+        width: 30px;
+        height: 30px;
+    }
+    /* menu 리스트 */
+    #container .menuwrap{
+        margin-bottom: 30px;
+    }
+    #container .menuwrap>.menu>li {
+        padding: 0 10px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #container .menuwrap>.menu>li::after {
+        width: 3px;
+        height: 3px;
+        right: 0;
+    }
+    #container .menuwrap>.menu a {
+        padding: 0;
+    }
+    /* 베스트 메뉴 소개글 */
+    .menutext p{
+        display: none;
+    }
+    /* storywrap 사진변경 */
+    .storewrap>.storebox {
+        margin-bottom: 30px;
+        background-image: url(../image/sub-banner1-mobile.jpg);
+    }
+    .storewrap>.brandbox {
+        background-image: url(../image/sub-banner2-mobile.jpg);
+    }
+    /* 메뉴 텍스트 */
+    .menutext{
+        padding: 0 5px;
+    }
+    /* stroywrap 텍스트변경 */
+    .storewrap .textbox {
+        /* pc margin 없애기 */
+        margin: 0;
+        /* 반응형 위치잡기 */
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        text-align: left;
+    }
+    .storewrap .textbox>h3 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    .storewrap .textbox>p {
+        font-size: 1.3em;
+    }
+    .storewrap .more {
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+    }
+    /* 브랜드 포스트  */
+    .brandpost{
+        height: 70vw;
+    }
+}
+@media screen and (max-width:519px){
+    /* .storewrap 글자 크기 조정 */
+    .storewrap .textbox>h3 {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+    .storewrap .textbox>p {
+        font-size: 1.2em;
+    }
+    .brandpost>.textbox{
+        width: 100%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:460px) {
+    /* .storewrap 글자 위치,more 위치조정 */
+    .storewrap .textbox span{
+        display: block;
+    }
+    .storewrap .more{
+        bottom: 10%;
+    }
+    #container .menuwrap{
+        padding: 0 5px;
+    }
+    #container .menuwrap>.menu{
+        padding-top: 50px;
+    }
+    #container .menuwrap>.menu a{
+        font-size: 14px;
+    }
+    .menuwrap>.menulistwrap{
+        margin-top: 20px;
+    }
+    .menutext{
+        margin-top: 5px;
+    }
+    .menutext>strong{
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+    .best {
+        line-height: unset;
+        font-size: 1em;
+    }
+    .menulist .best{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

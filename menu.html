@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/header-footer-media.css">
-    <script src="js/ham.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
     <header>
         <div class="innerbox">
             <p class="hambtn"><a href="#"><img src="image/icon/hambtn.png" alt="hambtn"></a></p>
-            <h1 class="logo"><a href="#"><img src="image/icon/LOGO.png" alt="Green guide logo"></a></h1>
+            <h1 class="logo"><a href="index.html"><img src="image/icon/LOGO.png" alt="Green guide logo"></a></h1>
             <ul id="nav">
-                <li><a href="#">메뉴</a></li>
-                <li><a href="#">Guider</a></li>
+                <li><a href="menu.html">메뉴</a></li>
+                <li><a href="brand.html">Guider</a></li>
                 <li><a href="#">매장</a></li>
                 <li><a href="#">소식</a></li>
             </ul>
             <ul class="gnb">
                 <li><a href="#">검색</a></li>
-                <li><a href="#">로그인</a></li>
+                <li><a href="login.html">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
             </ul>
         </div>
@@ -40,20 +40,19 @@
     <div id="container">
         <div class="menu-nav">
             <ul class="menu-nav-list">
-                <li><a href="#container">ALL</a></li>
-                <li><a href="#salad-menu">Salad</a></li>
-                <li><a href="#bowls-menu">Warm bowls</a></li>
-                <li><a href="#drink-menu">Drink</a></li>
-                <li><a href="#dressing-menu">Dressing</a></li>
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">Salad</a></li>
+                <li><a href="#">Warm bowls</a></li>
+                <li><a href="#">Drink</a></li>
+                <li><a href="#">Dressing</a></li>
             </ul>
         </div>
-        <div class="innerbox">
-            <section id="salad-menu">
+        <div class="innerbox menu-wrap">
+            <section id="salad-menu" class="on">
                 <h2>Salad</h2>
-                <!-- ul>li*6>(a[href="#"]>img[src="image/bowl$.png"])+div.textbox>strong+p>span*2 -->
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu1.png" alt="salad-menu-1">
                         </a>
                         <div class="menutext">
@@ -65,7 +64,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu2.png" alt="salad-menu-2">
                         </a>
                         <div class="menutext">
@@ -77,7 +76,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu3.png" alt="salad-menu-3">
                         </a>
                         <div class="menutext">
@@ -89,7 +88,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu4.png" alt="salad-menu-4">
                         </a>
                         <div class="menutext">
@@ -101,7 +100,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu5.png" alt="salad-menu-5">
                         </a>
                         <div class="menutext">
@@ -113,7 +112,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/menu6.png" alt="salad-menu-6">
                         </a>
                         <div class="menutext">
@@ -126,11 +125,11 @@
                     </li>
                 </ul>
             </section>
-            <section id="bowls-menu">
+            <section id="bowls-menu" class="on">
                 <h2>Warm bowls</h2>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-1.png" alt="bowls-menu-1">
                         </a>
                         <div class="menutext">
@@ -142,7 +141,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-2.png" alt="bowls-menu-2">
                         </a>
                         <div class="menutext">
@@ -154,7 +153,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-3.png" alt="bowls-menu-3">
                         </a>
                         <div class="menutext">
@@ -166,7 +165,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-4.png" alt="bowls-menu-4">
                         </a>
                         <div class="menutext">
@@ -178,7 +177,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-5.png" alt="bowls-menu-5">
                         </a>
                         <div class="menutext">
@@ -190,7 +189,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/bowl-6.png" alt="bowls-menu-6">
                         </a>
                         <div class="menutext">
@@ -203,11 +202,11 @@
                     </li>
                 </ul>
             </section>
-            <section id="drink-menu">
+            <section id="drink-menu" class="on">
                 <h2>Drink</h2>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/coke-zero.png" alt="drink-menu-1">
                         </a>
                         <div class="menutext">
@@ -218,7 +217,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/sprite-zero.png" alt="drink-menu-2">
                         </a>
                         <div class="menutext">
@@ -229,7 +228,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/green-tea.png" alt="drink-menu-3">
                         </a>
                         <div class="menutext">
@@ -240,7 +239,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/lemon-tea.png" alt="drink-menu-4">
                         </a>
                         <div class="menutext">
@@ -251,7 +250,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/grafeflute-tea.png" alt="drink-menu-5">
                         </a>
                         <div class="menutext">
@@ -263,11 +262,11 @@
                     </li>
                 </ul>
             </section>
-            <section id="dressing-menu">
+            <section id="dressing-menu" class="on">
                 <h2>Dressing</h2>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-1.png" alt="dressing-menu1">
                         </a>
                         <div class="menutext">
@@ -278,7 +277,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-2.png" alt="dressing-menu2">
                         </a>
                         <div class="menutext">
@@ -289,7 +288,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-3.png" alt="dressing-menu3"></a>
                         <div class="menutext">
                             <strong>Lemon Anchovy</strong>
@@ -299,7 +298,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-4.png" alt="dressing-menu4">
                         </a>
                         <div class="menutext">
@@ -310,7 +309,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-5.png" alt="dressing-menu5">
                         </a>
                         <div class="menutext">
@@ -321,7 +320,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="menu-sub.html">
                             <img src="image/dressing-6.png" alt="dressing-menu6">
                         </a>
                         <div class="menutext">

@@ -48,6 +48,10 @@
 .menu-nav-list>li:last-child{
     border: none;
 }
+.menu-nav-list>li>a:focus{
+    color: #04573F;
+    border-bottom: 1px solid #333;
+}
 /* section 크기조절 */
 #container>.innerbox{
     max-width: 1280px;
@@ -55,10 +59,11 @@
 /* section별 이미지 정렬 */
 #container>.innerbox>section{
     border-top: 3px solid #04573F;
-    margin-top: 120px;
+    margin-top: 60px;
+    display: none;
 }
-#container>.innerbox>section:first-child{
-    margin-top: 0;
+#container>.innerbox>section.on{
+    display: block;
 }
 section h2{
     font-size: 2em;
@@ -72,9 +77,13 @@ section ul{
     flex-wrap: wrap;
 }
 section ul>li{
+    display: block;
     width: calc(100% / 3);
     text-align: center;
     margin-bottom: 30px;
+}
+section ul>li.none{
+    display: none;
 }
 section ul>li>a{
     display: block;
@@ -165,8 +174,5 @@ section ul>li>a>img{
         height: 40px;
         line-height: 40px;
         border: none;
-    }
-    .menu-nav-list>li>a:focus{
-        border-bottom: 1px solid #333;
     }
 }

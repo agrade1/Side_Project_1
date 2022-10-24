@@ -379,19 +379,15 @@ body {
     }
     /* 배너 위치조정 */
     .banner>.banner1 {
-        background-image: url(../image/mobile-banner1.jpg);
+        background-image: url(../image/mobile-banner1.jpg) !important;
     }
     /* 배너 텍스트 */
     .banner1text,
     .banner2text {
         margin-left: 0px;
     }
-    .banner1text>a,
-    .banner2text>a {
+    .banner>li>div>a{
         margin-top: 30px;
-    }
-    .banner1text{
-        bottom: -67%;
     }
     .banner1text>h2{
         font-size: 3em;

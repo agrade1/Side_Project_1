@@ -69,8 +69,8 @@ window.onload = function(){
         winWidth = window.innerWidth;
         liWidth = winWidth;
         banner.style.width= liWidth * count +"px";
-        banner.style.transform=`translateX(0)`;
-        showBanner=0;
+        banner.style.transform=`translateX(${-liWidth}px)`;
+        showBanner=1;
     } 
     //ham버튼 클릭시 nav 표시
     const ham = document.querySelector(".hambtn>a");
